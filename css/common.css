@@ -1,0 +1,19 @@
+body {
+    /*天猫默认字体大小*/
+    font-size: 12px;
+    font-family: Arial;
+}
+
+
+/*所有的超链，都默认以灰色#999 形式表现出来*/
+
+a {
+    color: #999;
+}
+
+a:hover {
+    /*鼠标悬停没有下划线*/
+    text-decoration: none;
+    /*鼠标悬停，变为天猫红*/
+    color: #C40000;
+}
