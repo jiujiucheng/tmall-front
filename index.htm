@@ -7,9 +7,26 @@
 	<link rel="stylesheet" type="text/css" href="js/lib/bootstrap/dist/css/bootstrap.min.css">
 	<script type="text/javascript" src="js/lib/bootstrap/dist/js/bootstrap.min.js"></script>
 	<link rel="stylesheet" type="text/css" href="css/common.css">
+	<script type="text/javascript">
+		// iframe 高度自适应
+		function setIframeHeight(iframe) {
+			if(iframe){
+				var win = iframe.contentWindow || iframe.parentWindow
+
+				if(win.document.body) {
+					iframe.height = win.document.body.scrollHeight || win.document.documentElement.scrollHeight
+				}
+			}
+		}
+		window.onload = function () {
+			setIframeHeight(footer1)
+		}
+	</script>
 </head>
+
 <body>
 	<iframe src="nav.htm" width="100%" frameborder="0"></iframe>
 	<iframe src="search.htm" width="100%" frameborder="0"></iframe>
+	<iframe src="footer1.htm" width="100%" frameborder="0" scrolling="no" id='footer1' onload="setIframeHeight()"></iframe>
 </body>
 </html>
