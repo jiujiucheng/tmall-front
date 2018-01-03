@@ -20,6 +20,7 @@
 		}
 		window.onload = function () {
 			setIframeHeight(footer1)
+			setIframeHeight(home)
 		}
 	</script>
 </head>
@@ -27,6 +28,7 @@
 <body>
 	<iframe src="nav.htm" width="100%" frameborder="0"></iframe>
 	<iframe src="search.htm" width="100%" frameborder="0"></iframe>
+	<iframe src="home.htm" width="100%" frameborder="0" scrolling="no" id='home' onload="setIframeHeight()"></iframe>
 	<iframe src="footer1.htm" width="100%" frameborder="0" scrolling="no" id='footer1' onload="setIframeHeight()"></iframe>
 </body>
 </html>
